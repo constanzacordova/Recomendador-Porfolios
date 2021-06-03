@@ -1,0 +1,8 @@
+Para para ejecutar el programa recomendador_porfolio.py se debe considerar lo siguiente:
+
+1.Instalar las librerias del archivo requirements.txt
+2. En anaconda prompt, ejecutar la siguiente línea:
+   streamlit run recomendador_porfolio.py
+
+
+https://github.com/constanzacordova/proyecto_datascience

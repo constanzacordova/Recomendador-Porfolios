@@ -1,0 +1,11 @@
+**INFORMACION** &#128161;
+
+Esta aplicacion realiza la simulacion de los retornos y optimizacion de portafolio en base a datos historicos y modelos estadisticos en base a la teoria de Markowitz.
+
+Nuestros modelo recomienda portafolios optimizados en base al perfil de inversion mediante la estimacion de la rentabilidad, sin embargo no predice la rentabilidad ni la volatilidad futura, por lo que no es posible asegurar los retornos estimados.
+
+De momento solo contamos con informacion hasta mayo del 2021 para una cantidad limitada de acciones que siguen las tendencias del mercado (IPSA).
+
+--- Solucion creada para Proyecto Data Science - Desafio Latam (G25) ---
+
+--------------------------- Junio 2021 ---------------------------------
