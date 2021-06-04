@@ -115,7 +115,7 @@ def main():
         monto = st.number_input(label='', 
                                min_value = 0,
                                max_value = 100000000,
-                               value = 100000
+                               value = 100000,
                                step = 50000,
                                format = '%i')
         # ----------------------------------------------
