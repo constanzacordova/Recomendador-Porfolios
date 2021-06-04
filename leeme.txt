@@ -5,4 +5,4 @@ Para para ejecutar el programa recomendador_porfolio.py se debe considerar lo si
    streamlit run recomendador_porfolio.py
 
 
-https://github.com/constanzacordova/proyecto_datascience
+https://github.com/constanzacordova/Recomendador-Porfolios
