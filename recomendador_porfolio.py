@@ -286,13 +286,8 @@ def main():
 
                 #Detalle de las acciones del portafolio
                 st.subheader("Detalle del portafolio")
-                st.dataframe(fn.grid_portafolio(acciones, peso_accion, monto_distribuido, rent_pred))
-                st.table(fn.grid_portafolio(acciones, peso_accion, monto_distribuido, rent_pred))
-
-                ## Gráfico de acciones
-                st.subheader('Precio de cierre de las acciones del portafolio en los últimos 36 meses')
-                st.write(fn.grafico_precios(df))
-                
+                #st.dataframe(fn.grid_portafolio(acciones, peso_accion, monto_distribuido, rent_pred))
+                st.table(fn.grid_portafolio(acciones, peso_accion, monto_distribuido, rent_pred))        
                 
 
                 
@@ -316,7 +311,12 @@ def main():
                 
                 #Detalle de las acciones del portafolio
                 st.subheader("Detalle del portafolio")
-                st.dataframe(fn.grid_portafolio(acciones, peso_accion, monto_distribuido, rent_pred)[['Accion', 'Rentabilidad esperada']])
+                #st.dataframe(fn.grid_portafolio(acciones, peso_accion, monto_distribuido, rent_pred)[['Accion', 'Rentabilidad esperada']])
+                st.table(fn.grid_portafolio(acciones, peso_accion, monto_distribuido, rent_pred)[['Accion', 'Rentabilidad esperada']])
+                
+            ## Gráfico de acciones
+            st.subheader('Precio de cierre de las acciones del portafolio en los últimos 36 meses')
+            st.write(fn.grafico_precios(df))
                 
             ## Info
             st.write('')
