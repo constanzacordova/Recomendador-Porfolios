@@ -8,7 +8,7 @@ import plotly.graph_objs as go
 from datetime import datetime
 import locale
 locale.setlocale(locale.LC_ALL, '')
-import PIL import Image
+from PIL import Image
 
 import warnings
 warnings.filterwarnings(action = "ignore")
@@ -93,10 +93,10 @@ def main():
     op2 ='Obtener portafolio recomendado'
     op3 ='Ver precios históricos de las acciones'
     
-    st.sidebar.image(logo, width=300, caption="")
+    st.sidebar.image(logo, width=300)
     st.sidebar.markdown("# MENU")
     menu = st.sidebar.selectbox("", (op1, op2, op3))
-    st.sidebar.image(logo, width=300, caption="")
+    st.sidebar.image(logo, width=300)
 
     if menu == op1:
         st.title("Recomendador de Portafolios")
