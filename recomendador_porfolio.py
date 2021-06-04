@@ -312,7 +312,7 @@ def main():
                 st.write('Sharpe Ratio', round(sharpe_ratio*100,2),'%')
                 st.write('La rentabilidad real fue de', rent_port_real,'%')
                 
-                st.markdown(<span style="color:red">$retorno_esperado<span>)
+                st.markdown(<span style="color:red">retorno_esperado<span>)
 
                 #Detalle de las acciones del portafolio
                 st.subheader("Detalle del portafolio")
