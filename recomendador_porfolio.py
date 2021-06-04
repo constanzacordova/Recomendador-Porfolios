@@ -170,7 +170,7 @@ def main():
         st.write('')
         st.write('')
 
-        st.info(disclaimer.read())
+        #st.info(disclaimer.read())
 
         ####### FIN ENTRADAS #######
 
@@ -296,6 +296,7 @@ def main():
                 ## Gráfico de acciones
                 st.subheader('Precio de cierre de las acciones del portafolio en los últimos 36 meses')
                 st.write(fn.grafico_precios(df))
+                
 
                 
             ### Camino Triste
@@ -319,6 +320,9 @@ def main():
                 #Detalle de las acciones del portafolio
                 st.subheader("Detalle del portafolio")
                 st.dataframe(fn.grid_portafolio(acciones, peso_accion, monto_distribuido, rent_pred)[['Accion', 'Rentabilidad esperada']])
+                
+            ## Info
+            st.info(disclaimer.read())
 
     if menu == op3:
         st.subheader('Precio de cierre de acciones')
