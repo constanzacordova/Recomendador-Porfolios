@@ -287,11 +287,12 @@ def main():
                 #Detalle de las acciones del portafolio
                 st.subheader("Detalle del portafolio")
                 st.dataframe(fn.grid_portafolio(acciones, peso_accion, monto_distribuido, rent_pred))
+                st.table(fn.grid_portafolio(acciones, peso_accion, monto_distribuido, rent_pred))
 
                 ## Gráfico de acciones
                 st.subheader('Precio de cierre de las acciones del portafolio en los últimos 36 meses')
                 st.write(fn.grafico_precios(df))
-                st.table(fn.grafico_precios(df))
+                
                 
 
                 
