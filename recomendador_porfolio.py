@@ -311,6 +311,8 @@ def main():
                 st.write('Se espera una rentabilidad de',rent_port_pred,'% con un riesgo de', riesgo,'% para el peridoo', fecha_input)
                 st.write('Sharpe Ratio', round(sharpe_ratio*100,2),'%')
                 st.write('La rentabilidad real fue de', rent_port_real,'%')
+                
+                st.markdown(<span style="color:red">$retorno_esperado<span></h1>)
 
                 #Detalle de las acciones del portafolio
                 st.subheader("Detalle del portafolio")
