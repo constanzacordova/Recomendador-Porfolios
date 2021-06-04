@@ -82,7 +82,7 @@ fecha = list(map(lambda x: x.strftime("%m/%Y"), list_inputs))
 disclaimer = open('apoyo/disclaimer.txt')
 
 #### LOGO #####
-logo = image.open('apoyo/logo.png')
+logo = Image.open('apoyo/logo.png')
 #-------------------------------------------
 
 st.beta_set_page_config( page_title="Recomendador de Portafolios ", page_icon='📈')
