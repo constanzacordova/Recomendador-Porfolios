@@ -93,10 +93,10 @@ def main():
     op2 ='Obtener portafolio recomendado'
     op3 ='Ver precios históricos de las acciones'
     
-    st.sidebar.image(logo, width=300)
+    st.sidebar.image(logo, width=200)
     st.sidebar.markdown("# MENU")
     menu = st.sidebar.selectbox("", (op1, op2, op3))
-    st.sidebar.image(logo, width=300)
+    st.sidebar.image(logo, width=200)
 
     if menu == op1:
         st.title("Recomendador de Portafolios")
