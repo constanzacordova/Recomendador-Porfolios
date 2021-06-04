@@ -93,7 +93,7 @@ def main():
     menu = st.sidebar.selectbox("", (op1, op2, op3))
 
     if menu == op1:
-        st.subheader("Recomendador de Portafolios de Inver$ión")
+        st.title("Recomendador de Portafolios")
         video_file = open('apoyo/video_inicio.mp4', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes, start_time = 0)
