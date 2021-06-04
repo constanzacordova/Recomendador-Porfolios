@@ -175,6 +175,7 @@ def main():
         ####### FIN ENTRADAS #######
 
         if boton1:
+            st.balloons()
 
             # Realizamos la prediccion de rentabilidad de acuerdo a escenario escogido
 
