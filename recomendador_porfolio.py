@@ -81,7 +81,7 @@ fecha = list(map(lambda x: x.strftime("%m/%Y"), list_inputs))
 disclaimer = open('apoyo/disclaimer.txt')
 #-------------------------------------------
 
-st.beta_set_page_config( page_title="Recomendador de Porfolios ", page_icon='📈')
+st.beta_set_page_config( page_title="Recomendador de Portafolios ", page_icon='📈')
 ############# APP PORTAFOLIO OPTIMO #############
 def main():
     
@@ -291,6 +291,7 @@ def main():
                 ## Gráfico de acciones
                 st.subheader('Precio de cierre de las acciones del portafolio en los últimos 36 meses')
                 st.write(fn.grafico_precios(df))
+                st.table(fn.grafico_precios(df))
                 
 
                 
