@@ -113,10 +113,11 @@ def main():
 
         st.subheader('¿Cuánto quieres invertir? &#128176;')
         monto = st.number_input(label='', 
-                               min_value = 0.0,
-                               max_value = 100000000.0,
-                               value = 250000.0,
-                               format = '%.0f')
+                               min_value = 0,
+                               max_value = 100000000,
+                               value = 100000
+                               step = 50000,
+                               format = '%i')
         # ----------------------------------------------
         st.subheader('Escoge tu estrategia de inversión &#128161;')
         estrategia = st.selectbox('',
@@ -149,6 +150,7 @@ def main():
                                min_value = 0.0,
                                max_value = 100.0,
                                value = 0.3,
+                               step= 0.1,
                                format ='%.1f')
 
         tasa = tasa/100
