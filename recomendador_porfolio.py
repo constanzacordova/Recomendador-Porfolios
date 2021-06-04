@@ -8,6 +8,7 @@ import plotly.graph_objs as go
 from datetime import datetime
 import locale
 locale.setlocale(locale.LC_ALL, '')
+import PIL import Image
 
 import warnings
 warnings.filterwarnings(action = "ignore")
@@ -79,6 +80,9 @@ fecha = list(map(lambda x: x.strftime("%m/%Y"), list_inputs))
 
 ### DESCARGO DE RESPONSABILIDAD ########
 disclaimer = open('apoyo/disclaimer.txt')
+
+#### LOGO #####
+logo = image.open('apoyo/logo.png')
 #-------------------------------------------
 
 st.beta_set_page_config( page_title="Recomendador de Portafolios ", page_icon='📈')
@@ -89,8 +93,10 @@ def main():
     op2 ='Obtener portafolio recomendado'
     op3 ='Ver precios históricos de las acciones'
     
+    st.sidebar.image(logo, width=300, caption="")
     st.sidebar.markdown("# MENU")
     menu = st.sidebar.selectbox("", (op1, op2, op3))
+    st.sidebar.image(logo, width=300, caption="")
 
     if menu == op1:
         st.title("Recomendador de Portafolios")
