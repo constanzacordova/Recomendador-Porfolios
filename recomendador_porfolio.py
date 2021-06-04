@@ -97,7 +97,7 @@ def main():
     st.sidebar.markdown("# MENU")
     menu = st.sidebar.selectbox("", (op1, op2, op3))
     
-    for i in range(25):
+    for i in range(22):
         st.sidebar.markdown("")
     st.sidebar.image(logo, width=100)
 
