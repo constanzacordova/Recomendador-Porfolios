@@ -96,7 +96,7 @@ def main():
         st.title("APP - Recomendador de Porfolios")
         video_file = open('apoyo/video_inicio.mp4', 'rb')
         video_bytes = video_file.read()
-        st.video(video_bytes, start_time = 2)
+        st.video(video_bytes, start_time = 0)
 
         st.write('')
         st.write('')
@@ -165,18 +165,12 @@ def main():
         st.write('')
         st.write('')
         st.write('')
-        st.write('')
-        st.write('')
-        st.write('')
-        st.write('')
-
         #st.info(disclaimer.read())
 
         ####### FIN ENTRADAS #######
 
         if boton1:
-            st.balloons()
-
+            
             # Realizamos la prediccion de rentabilidad de acuerdo a escenario escogido
 
             if escenario == escenario1:
@@ -273,7 +267,8 @@ def main():
 
             ### Camino Feliz
             if rent_port_pred > 0:
-
+                st.balloons()
+                
                 #titulo
                 st.header('&#128083; De acuerdo a nuestro modelo, tu portafolio óptimo es el siguiente: ')
 
@@ -322,6 +317,10 @@ def main():
                 st.dataframe(fn.grid_portafolio(acciones, peso_accion, monto_distribuido, rent_pred)[['Accion', 'Rentabilidad esperada']])
                 
             ## Info
+            st.write('')
+            st.write('')
+            st.write('')
+            st.write('')
             st.info(disclaimer.read())
 
     if menu == op3:
