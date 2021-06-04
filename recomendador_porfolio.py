@@ -312,8 +312,6 @@ def main():
                 st.write('Sharpe Ratio', round(sharpe_ratio*100,2),'%')
                 st.write('La rentabilidad real fue de', rent_port_real,'%')
                 
-                st.markdown('''<span style="color:red">$retorno_esperado</span>''', retorno_esperado, unsafe_allow_html = True)
-
                 #Detalle de las acciones del portafolio
                 st.subheader("Detalle del portafolio")
                 st.dataframe(fn.grid_portafolio(acciones, peso_accion, monto_distribuido, rent_pred)[['Accion', 'Rentabilidad esperada']])
